@@ -34,6 +34,7 @@ if(rhy.endswith('n')):
 rhy = rhy.replace("non","ndn")
 rhy = rhy.replace("nm", "no")
 rhy = str(len(rhy)) + rhy
+ser.write(rhy.encode())
 if(len(filename)>1):
     f.write(rhy)
     f.close()
